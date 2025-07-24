@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navigation { 
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    height: 50px;
+    display: flex;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navigation_about, .navigation_contacts, .navigation_main {
+    display: flex;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.main_content {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.welcome_part {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+.what_you_can_find {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info_obsh {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+.search_rooms { 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:40%;
+}
+.room_card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+.list_rooms { 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:5px;
+    overflow-y:scroll;
+    gap:20px;
+    padding:10px;
+    flex-direction:column;
+}
+.main_content_of_2 { 
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.situation_room {
+    display:flex;
+    font-weight:900;
+}
+.edit_room { 
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.kitchens, .retro_and_gym, .blocks {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #3498db;
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#id_rooms { 
+    color: #3498db;
+    font-size: 1.5rem;
+}
+input[type="text"] {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
+button {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+     .navigation { 
+        flex-direction:column;
+     }
+     .navigation div { 
+        border-bottom:1px solid rgba(255,255,255,0.2);
+     }
+}
